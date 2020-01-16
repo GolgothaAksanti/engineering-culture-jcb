@@ -21,8 +21,10 @@ This is not about JS style, as style guide we use Prettier and lint with Eslint.
     always call with (err, data) parameters
     callback is called exactly once
     if you need to report more than once, convert your function/class to EventEmitter or Stream
-    EventEmitter: expect more then (and less then) one listener. All handlers are called synchronously one after another.
-    Promises / Thunks are OK but if you can express your flow with promises but cannot with callbacks you might want to refactor architecture
+    EventEmitter: expect more then (and less then) one listener.
+    All handlers are called synchronously one after another.
+    Promises / Thunks are OK but if you can express your flow with promises 
+    but cannot with callbacks you might want to refactor architecture
 
 ### Packages 
 
