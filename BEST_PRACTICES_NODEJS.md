@@ -26,7 +26,8 @@ This is not about JS style, as style guide we use Prettier and lint with Eslint.
 
 ### Packages 
 
-    use standard top level structure: lib/, bin/, test/, test/integration/, examples/, src/, index.js, package.json, README.md, LICENSE, Changelog.md
+    use standard top level structure: lib/, bin/, test/, test/integration/, examples/, src/, index.js, 
+    package.json, README.md, LICENSE, Changelog.md
     use expressive non-creative name when possible
     use proper non-creative keywords in package.json (always)
     package.json scripts:
@@ -34,7 +35,8 @@ This is not about JS style, as style guide we use Prettier and lint with Eslint.
         npm run debug
         npm npm run integration
         etc.
-    Changelog: answers different question than git log. Git: "why do we have this change?". Changelog: "Why should I upgrade this package?"
+    Changelog: answers different question than git log. Git: "why do we have this change?". 
+    Changelog: "Why should I upgrade this package?"
 
 ### Performance 
 
@@ -50,7 +52,8 @@ Errors can be divided into two main parts: operational errors and programmer err
 
 ### Operational errors
 
-    Operational errors can happen in well-written applications as well, because they are not bugs, but problems with the system / a remote service, like:
+    Operational errors can happen in well-written applications as well, because they are not bugs, 
+    but problems with the system / a remote service, like:
 
         request timeout
         system is out of memory
@@ -63,7 +66,8 @@ Errors can be divided into two main parts: operational errors and programmer err
         Try to solve the error - if a file is missing, you may need to create one first
         Retry the operation, when dealing with network communication
         Tell the client, that something is not ok - can be used, when handling user inputs
-        Crash the process, when the error condition is unlikely to change on its own, like the application cannot read its configuration file
+        Crash the process, when the error condition is unlikely to change on its own, 
+        like the application cannot read its configuration file
 
     Also, it is true for all the above: log everything.
 
@@ -76,11 +80,13 @@ Errors can be divided into two main parts: operational errors and programmer err
 
     Handling programmer errors
 
-    Crash immediately - as these errors are bugs, you won't know in which state your application is. A process control system should restart the application when it happens, like: supervisord or monit.
+    Crash immediately - as these errors are bugs, you won't know in which state your application is.
+    A process control system should restart the application when it happens, like: supervisord or monit.
 
 ## Do not reinvent / unless if requested or needed.
 
-    Always look for existing solutions first. NPM has a crazy amount of packages, there is a pretty good chance you will find the functionality that you are looking for.
+    Always look for existing solutions first. NPM has a crazy amount of packages, 
+    there is a pretty good chance you will find the functionality that you are looking for.
 
 ## Dive Into Implementation
 
@@ -138,7 +144,8 @@ We enforce style rules and hints using Prettier and EsLint, this enable pre-comm
 
 ##### NodeJs over JSON for configuration
 
-package.json remain the only config file for batch and rules over the project and others spec config file for different integration like .rc, yml, etc.
+package.json remain the only config file for batch and rules over the project and others spec config file
+for different integration like .rc, yml, etc.
 but we mainly use the config.js or config folder/* for the project management development as it gives more flexibility 
 
 Sample 
