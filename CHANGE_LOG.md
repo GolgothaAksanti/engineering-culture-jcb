@@ -2,6 +2,6 @@
 
 All notable changes to this project will be documented in this file.
 
-## [version] - date
+## [version] - titile - comment - by  date
 ### Added
 - Launch the .... Justice ChatBot
