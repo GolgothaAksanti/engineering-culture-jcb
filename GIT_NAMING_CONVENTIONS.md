@@ -1,3 +1,5 @@
+# GIT NAMING CONVENTIONS AND BEST PRACTICES 
+
 ### Branch Naming
 
 Branches created should be named using the following format:
